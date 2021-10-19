@@ -1,0 +1,113 @@
+header{
+    background:$darkblue;display:flex;justify-content:space-between;
+    @media(min-width:1000px){
+        height:100px;
+    }
+    .logo{
+        @media(min-width:767px){
+            display: flex;align-items:center;
+        }
+        img{
+            height: 88px;padding: 20%;
+            @media(min-width:767px){
+                padding:15%;height:75px;
+            }
+            @media(min-width:1000px){
+                margin-left:43px;padding:7% 0 0 0;height:60px;margin-right:11px;
+            }
+        }
+        a{
+            &:last-child{
+                display: none;text-decoration: none;color: white;text-transform: uppercase;font-size:17px;font-family:"Rubik Regular";font-weight:400;
+               span{
+                   margin-right:10px;color:$blue;font-weight:bolder;font-family: "Rubik Regular";font-size:24px;
+               }
+                @media(min-width: 767px){
+                    display: block;
+                }
+                @media(min-width:1000px){
+                    font-size:18px;letter-spacing:0.75px;margin-top:0;
+                }
+            }
+        }
+    }
+    .menu{
+        @media(min-width:767px){
+            margin:auto 0;
+        }
+        label{
+            padding:20px 41px 20px 5px;position:absolute;right:20px;top:30px;
+            @media(min-width:767px){
+                display: none;
+            }
+           
+            span{
+                width:35px;height:5px;background:$lightblue;position: absolute;
+                &:before{
+                    width:100%;height:100%;background: $lightblue;content:"";position: absolute;top:-11px;
+                }
+                &:after{
+                    width:100%;height:100%;background: $lightblue;content:"";position: absolute;top:11px;
+                }
+            }
+        }
+      
+        ul{
+            background:$darkblue;max-height:0;overflow: hidden;opacity: 0;transition:700ms;position: absolute;width:100%;left:0;z-index: 9;text-align:right;top:95px;
+            @media(min-width:767px){
+                max-height:unset;opacity: 1;position: relative;list-style-type: disc;color:white;top:0;
+            }
+            li{
+                @media(min-width:767px){
+                    float:left;margin-right:14px;
+                }
+                @media(min-width:1000px){
+                    margin-right:10px;
+                }
+                @media(min-width:1130px){
+                    margin-right:15px;
+                }
+                &:nth-child(1){
+                    @media(min-width:767px){
+                        display: none;
+                    }
+                }
+                &:last-child{
+                    list-style:none;
+                }
+                a{
+                    font-family:"Rubik Regular";font-weight:400;display: block;padding:20px;text-decoration: none;color:white;text-transform:uppercase;
+                    @media(min-width:767px){
+                        padding:20px 15px 15px 5px;
+                    }
+                    @media(min-width:817px){
+                        padding:20px 15px 20px 5px;
+                    }
+                    @media(min-width:1000px){
+                        padding:13px 20px 13px 5px;font-size:20px;
+                    }
+                    @media(min-width:1160px){
+                        padding:13px 20px 13px 15px;font-size:24px;
+                    }
+               &:hover{
+                   color:$lightblue;
+               }
+                }
+                button{
+                    border-radius:6px;font-family:"Rubik Regular";font-weight:400; margin:20px 20px 20px;text-transform:uppercase;border: none;color: white;background:$darkblue;
+                    @media(min-width:767px){
+                        height:45px;width:100px;background:$blue;font-size:15px;margin:0;margin-top:5px;
+                    }
+                    @media(min-width:1000px){
+                        width:149px;font-size:21px;letter-spacing:0.88px;margin-right:63px;margin-top:0;
+                    }
+                }
+            }
+            
+        }
+        .active{
+            max-height: 500px;opacity: 1;
+        }
+    }
+}
+

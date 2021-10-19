@@ -1,0 +1,161 @@
+.read-more{
+    .row{
+        height:450px;
+        padding-left: 148px;
+        @media(max-width:767px){
+            height: auto;
+        }
+        .col-lg-4{
+            img{
+                width:350px;height:350px;
+            }
+        }
+        
+        .col-lg-8{
+            h2{
+                font-family:"Rubik Bold";font-weight:700;font-size:48px;letter-spacing: 2px;color: $darkblue;
+            }
+            p{
+                font-family:"Rubik Regular";font-weight:400;font-size:18px;letter-spacing: 0.82px;color:#454545;
+            }
+            input{
+                width:534px;height:47px;border-radius:4px;border:1px solid $darkblue;font-size:18px;font-family:"Rubik Regular";font-weight:400;letter-spacing: 0.75px;color:#000000;padding:0 15px;margin-bottom:19px;
+                &::placeholder{
+                    color:#000000;
+                }
+            }
+            li{
+                padding-left:20px; font-family:"Rubik Regular";font-size:12px;font-weight:400;letter-spacing: 0.5px;padding-bottom:5px;cursor: pointer;
+
+                span{
+                      border-radius:2px; transform:translateX(-20px); height: 11px;width:11px;border-radius: 2;border:1px solid $darkblue;position: absolute;  
+                }
+            }
+            .inputs{
+               width:534px; display: flex;justify-content:space-between;
+                label{
+                    border:1px solid $darkblue;border-radius:4px;height:47px;width:260px;font-family:"Rubik Regular";font-weight:400;font-size:18px;letter-spacing: 0.75px;padding:13px 19px 12px 16px;display: flex;justify-content: space-between;
+                    i{
+                        color: $darkblue;
+                    }
+                 
+                     
+                    
+                }
+                .countries{
+                 opacity: 0; max-height:0;z-index: 1; transition: 700ms ease-in-out; overflow:hidden;top:48%;border-radius:4px; position: absolute;width:260px;padding:13px 15px;border:1px solid $darkblue;
+                 @media(max-width:1150px){
+                    top:60.5%;
+                }
+                @media(max-width:1026px){
+                    top:65%;
+                }
+                @media(max-width:805px){
+                    top:78%;
+                }
+                }
+                .active{
+                    max-height: 500px;opacity: 1;
+                   
+                }
+               
+               
+            }
+            i{
+                transition:500ms ease-in-out;
+                &:before{
+                    margin-left:0;
+                }
+            }
+            .rotate{
+                i{
+              
+                    transform:rotate(180deg);
+               
+                }
+            }
+           .fields{
+             position: absolute ;top:48%;border:1px solid $darkblue;border-radius:4px;display: flex;padding:13px 15px;max-height:0;opacity:0;transition: 700ms;justify-content: space-evenly;
+             @media(max-width:1150px){
+              top:60.5%;
+          }
+          @media(max-width:1026px){
+            top:65%;
+        }
+        @media(max-width:805px){
+            top:78%;
+        }
+        ul{
+            margin-right:5px;
+        }
+            }
+
+           ul{
+               .active{
+                   span{
+                       background: $darkblue;
+                   }
+               }
+           }
+        }
+    }
+    .card-deck{
+        padding:0 71px;
+        @media(max-width:500px){
+            padding:0;
+        }
+        .card{
+            margin:0 auto 30px;height:380px;box-shadow:0 2px 40px rgba(0, 0, 0, 0.1);border:none;
+            @media(max-width:500px){
+                min-width:100%;
+            }
+            .img-card-top{
+                padding:14px 29px 0 21px;display: flex;justify-content: space-between;align-items: center;
+                img{
+                    &:first-child{
+                        width:136px;height: auto;
+                    }
+                    &:last-child{
+                        width:65px;height: auto;
+                    }
+                }
+            }
+            .card-body{
+                padding:0;padding-left:15px;
+                h3{
+                    font-family:"Rubik Regular";font-weight:400;font-size:24px;letter-spacing: 1.09px;color:#454545;margin:26px + 14px 0 17px;
+                }
+                p{
+                    font-family: "Rubik Regular";font-weight:400;font-size:22px;color:#454545
+                }
+                ul{
+                    margin-top:46px;
+                    li{
+                        font-family: "Rubik Regular";font-size:18px;letter-spacing: 0.82px;font-weight:400;color: #454545;margin-bottom:10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.col-xl-3{
+margin:0 auto;
+
+}
+.col-md-6{
+    @media(max-width: 578px){
+        padding:0;
+    }
+}
+
+@keyframes rotateIcon{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

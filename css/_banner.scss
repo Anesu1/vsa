@@ -1,0 +1,179 @@
+.banner{
+    background-image: url("../images/Rectangle-hero.png");@include background();height:830px;
+    .container{
+        text-align:center;font-family:"Rubik Regular";
+        @media(max-width:500px){
+            padding:0;
+        }
+        h1{
+            font-weight:700;font-size:48px;letter-spacing: 2px;color:$darkblue;text-transform:uppercase;padding-top:54px;font-family:"Rubik Bold";
+            @media(max-width:767px){
+                font-size:40px;
+            }
+        }
+        p{
+            font-weight:400;font-size:21px;letter-spacing: 0.88px;width:791px;margin:0 auto;padding-top:17px;
+            @media(max-width:1000px){
+                width:70%;
+            }
+            @media(max-width:767px){
+                width:100%;
+            }
+        }
+    }
+    
+    .owl-carousel{
+        position: relative;
+    left: 50%;
+    top:-43px;
+    transform: translate(-50%,-92%);width:750px;
+    @media(max-width:1200px){
+        top:-98px;width:75%;
+    }
+    @media(max-width:1000px){
+        top:-82px;width:70%;
+    }
+    @media(max-width:990px){
+        top:-149px;
+    }
+    @media(max-width:768px){
+        top:-137px;width:100%;
+    }
+    @media(max-width:577px){
+        top:-116px;
+    }
+    @media(max-width:769px) and (min-height:1000px){
+        top:-149px;
+    }
+        .item{
+            position: relative;
+            img{
+                height:276px;width:349px;position: relative;
+                top: 0;
+                margin: 0 auto;
+               @media(max-width:990px){
+                height: 210px; width: 268px;
+               }
+            }
+            .bnnr{
+                width:295px;
+                @media(max-width:990px){
+                    width:230px;
+                }
+                @media(max-width:767px){
+                    width:244px;
+                }
+            }
+            .text{
+                display: flex;width: max-content;margin:35px auto 0 auto;
+                @media(max-width:1000px){
+                    flex-direction:column;margin-top:8px;
+                }
+                img{
+                    height:24px;width: auto; transform: translate(-10%, -17%);
+                }
+                ul{
+                    width: max-content;display: flex;color:white;
+                    @media(max-width:1000px){
+                        flex-direction: column;
+                    }
+                    li{
+                        margin:0 20px;list-style-type: disc;font-size:15px;
+                        &:nth-child(1){
+                            list-style-type: none;
+                        }
+                        @media(max-width:1000px){
+                            list-style: none;
+                        }
+                        @media(max-width:500px){
+                            font-size:13px;
+                        }
+                    }
+                }
+            }
+        }
+        .owl-dots{
+            display: none;
+        }
+      .owl-nav button.owl-next{
+         font-size:12px;border:none;background:rgb(65, 87, 175);color:white;position: absolute;bottom:0;right:33px;width:76px;height:28px;font-weight:400;font-family:"Rubik Regular";letter-spacing: .5px;border-radius:2px;
+        @media(max-width:1000px){
+            right:12px;bottom:16px;
+        }
+        @media(max-width:575px){
+            bottom:-9px;
+        }
+        @media(max-width:769px) and (min-height:1000px){
+           right:110px;
+        }
+        }
+     .owl-nav button.owl-prev{
+        font-size:12px;border:none;background:rgb(65, 87, 175);color:white;position: absolute;bottom:0;left:33px;width:76px;height:28px;font-weight:400;font-family:"Rubik Regular";letter-spacing: .5px;border-radius:2px;
+        @media(max-width:1000px){
+            left:12px;bottom:16px;
+        }
+        @media(max-width:575px){
+            bottom:-9px;
+        }
+        @media(max-width:769px) and (min-height:1000px){
+            left:110px;
+         }
+    }
+    
+        
+    }
+    
+    .header-img-1{
+        position: absolute;left:0;top:50%;transform:translate(-17%,0%);width:214px;height:279px;
+        @media(max-width:767px){
+            display: none;
+        }
+        @media(min-width:767px) and (min-height:1000px){
+            transform: translateY(-50%);width:214px - 50px;height:279px - 50px;
+         }
+         @media(min-width:1000px) and (min-height:1000px){
+            top:40%;
+         }
+    }
+    .header-img-2{
+        position: absolute;right:0;top:50%;width:197px;height: 297px;
+        @media(max-width:767px){
+            display: none;
+        }
+        @media(min-width:767px) and (min-height:1000px){
+            transform: translateY(-50%);height:297px - 50px;width:197px - 50px;
+         }
+         @media(min-width:1000px) and (min-height:1000px){
+            top:40%;
+         }
+    }
+    .box{
+        height: 321px + 90px;width:70%;margin:50px auto 0;
+        @media(max-width:767px){
+            width:100%;
+        }
+        @media(max-width:575px){
+            height:380px;
+        }
+        .upper{
+            display: flex;
+            @media(max-width:575px){
+                height:210px;
+            }
+            img{
+                width:33.3%;
+                &:first-child{
+                    border-radius: 4px 0 0 0;
+                }
+                &:last-child{
+                    border-radius: 0 4px 0 0;
+                }
+            }
+        }
+        .bottom{
+            background:$darkblue;height: 90px;width:100%;
+            
+        }
+    }
+
+}

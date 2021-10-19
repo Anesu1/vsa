@@ -1,0 +1,27 @@
+@import "./mixins";
+@import "./variables";
+@import "./reset";
+
+//Home 
+@import "./header";
+@import "./banner";
+@import "./second";
+@import "./inspire";
+@import "./oppo";
+@import "./footer";
+
+//About
+@import "./about";
+@import "./about-second";
+@import "./team";
+
+//Spotlight
+@import "./spotbanner";
+@import "./spotsecond";
+@import "./read-more";
+
+//Spotlight inner
+@import "./inner-spotlight";
+
+//oppotunity
+@import "./oppo_page";

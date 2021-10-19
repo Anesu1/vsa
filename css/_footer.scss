@@ -1,0 +1,21 @@
+footer{
+    padding:81px 0; @include flex();flex-direction:column;
+    .img{
+        width:525px;display: flex;justify-content: space-evenly;
+        @media(max-width:767px){
+            width:100%;
+        }
+    }
+    img{
+        height: 50px;
+        @media(max-width:767px){
+            height:25px;
+        }
+    }
+    p{
+        margin-top:55px;font-family:"Rubik Medium";font-weight:500;font-size:21px;
+        @media(max-width:767px){
+            font-size:15px;
+        }
+    }
+}

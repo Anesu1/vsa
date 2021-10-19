@@ -1,0 +1,126 @@
+.inspire{
+    padding:81px 57px 94px 57px;
+    @media(max-width:767px){
+        padding:10% 5%;text-align:center;
+    }
+    .col-md-6{
+        font-family:"Rubik Regular";
+        &:first-child{
+            
+            h2{
+                font-weight:700;font-family:"Rubik Bold";font-size:36px;padding-left:9px;color: $lightblue;letter-spacing: 1.64px;margin-bottom:30px;
+                @media(max-width:1000px){
+                    font-size:30px;
+                }
+                @media(max-width:767px){
+                    font-size:25px;
+                }
+            }
+            p{
+                font-weight:400;font-size:24px;color:#000000;line-height:28px;padding-left:9px;margin-bottom:30px;
+                @media(max-width:1000px){
+                    font-size:15px;
+                }
+            }
+            form{
+               width:604px; border-radius:4px;box-shadow: 0 2px 14px rgba(0, 0, 0, 0.10);text-align: left;
+               @media(max-width:1200px){
+                   width:100%;
+               }
+                .input{
+                    display: flex;justify-content: space-between;margin-bottom:20px;
+                    @media(max-width:767px){
+                        flex-direction:column;
+                    }
+                    label{
+                        text-transform:uppercase;font-family:"Rubik Bold";font-weight:400;font-size:12px;margin-bottom:10px;
+                    }
+                    .input1{
+                        padding:16px 0 0 27px;width:232px;
+                        @media(max-width:1200px){
+                            width:48.5%;
+                        }
+                        @media(max-width:767px){
+                            width:100%;padding:16px 15px 0 15px;
+                        }
+                        input{
+                            border-radius: 1px;border:1px solid #979797;height:50px;width:100%;
+                            @media(max-width:1000px){
+                                height:40px;
+                            }
+                        }
+                    }
+                    .input2{
+                        padding:16px 27px 0 0;width:300px;
+                        @media(max-width:1200px){
+                            width:48.5%;
+                        }
+                        @media(max-width:767px){
+                            width:100%;padding:16px 15px 0 15px;
+                        }
+                        input{
+                            height:50px;border-radius: 1px;border:1px solid #979797;width:100%;
+                            @media(max-width:1000px){
+                                height:40px;
+                            }
+                        }
+                    }
+                }
+                .text{
+                    padding:0 25px 0 27px;
+                    @media(max-width:767px){
+                        padding:0px 15px;
+                    }
+                    label{
+                        text-transform:uppercase;font-family:"Rubik Bold";font-weight:400;font-size:12px;margin-bottom:10px;
+                    }
+                    textarea{
+                        width:100%;border:1px solid #979797;border-radius:1px;
+                        @media(max-width:1000px){
+                            height:130px;
+                        }
+                    }
+                   
+                }
+                .btnn{
+                    display: flex;flex-direction: row-reverse;padding-right:25px;
+                    @media(max-width:767px){
+                        justify-content: center;padding-right:0;
+                    }
+                    a{
+                        button{
+                            width:145px;height: 50px;border-radius: 4px;background: $blue;color: white;font-family: "Rubik Regular";font-size:21px;border:none;text-transform: uppercase;font-weight:700;letter-spacing: 0.95px;margin-top:20px;margin-bottom:21px;
+                            @media(max-width:1000px){
+                                font-size:18px;width:120px;height:40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:last-child{
+            @include flex();flex-direction:column;
+            @media(max-width:767px){
+                margin-top:30px;
+            }
+            img{
+                max-width:400px;
+                @media(max-width:1000px){
+                    max-width:300px;
+                }
+                @media(max-width:575px){
+                    max-width:250px;
+                }
+            }
+            h5{
+                margin: 29px 0 20px 0;font-family:"Rubik Bold"; font-size:24px;color:#191847;font-weight:700;line-height:30px;
+            }
+            p{
+                font-family:"Rubik Regular";font-size:21px;font-weight:400;color:#191847;text-align: center;
+                @media(max-width:1000px){
+                    font-size:18px;
+                }
+            }
+        }
+    }
+}

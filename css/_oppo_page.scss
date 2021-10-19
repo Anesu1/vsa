@@ -1,0 +1,18 @@
+.oppo-banner{
+    background:url("../images/opp-Rectangle.png");background-position:center bottom;
+    h1{
+        font-family:"Rubik Bold";font-size:64px;font-weight:700;letter-spacing: 2.67px;color:$darkblue;text-align:center;
+    }
+    p{
+        text-align:center;font-family:"Rubik Regular";font-weight:400;font-size:21px;letter-spacing:0.88px;color:#000000;
+    }
+    .container{
+        position: relative;text-align:left;
+        img{
+           z-index: 1; position: absolute;left:0;top:0;height:100%;width:100%;
+        }
+        p{
+            font-family:"Rubik Regular";font-weight:400;font-size:18px;letter-spacing: 0.82px;color:#454545;padding:62px 0 0 89px;
+        }
+    }
+}

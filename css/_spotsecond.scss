@@ -1,0 +1,52 @@
+.spot-second{
+    padding-top:108px;padding-bottom:50px;
+    @media(max-width:1000px){
+        padding:70px 0 50px;
+    }
+    h2{
+        margin-bottom:38px;font-family:"Rubik Medium";font-weight:500;font-size:36px;letter-spacing: 1.64px;color:#454545;
+        @media(max-width:1000px){
+            font-size:30px;
+        }
+    }
+    .owl-carousel{
+        width:70%;margin:0 auto;text-align:center;
+        p{
+            font-family:"Rubik Regular";font-weight:400;font-size:18px;letter-spacing: 0.82px;color: #454545;
+            @media(max-width:1000px){
+                font-size:15px;
+            }
+        }
+        .owl-bottom{
+            display: flex;justify-content:center;margin-top:38px;
+            img{
+                width:24px;height: 24px;margin-right:10px;
+            }
+            ul{
+                display: flex;
+                li{
+                    margin-right:5px;font-family:"Rubik Regular";font-weight:400;font-size:15px;letter-spacing: 0.63px;color: #454545;
+                }
+            }
+        }
+       
+        .owl-nav{
+            transform:translateY(-40px);
+            button.owl-prev{
+              color:white;  position: absolute;left:157px;height:28px;width:76px;border-radius: 2px;background:$blue;font-family:"Rubik Regular";font-weight:400;font-size:12px;letter-spacing: 0.5px;
+              @media(max-width:1000px){
+                left:0;
+            }
+            }
+            button.owl-next{
+               color:white; position: absolute;right:157px;height:28px;width:76px;border-radius: 2px;background:$blue;font-family:"Rubik Regular";font-weight:400;font-size:12px;letter-spacing: 0.5px;
+               @media(max-width:1000px){
+                right:0;
+            }
+            }
+        }
+        .owl-dots{
+            display: none;
+        }
+    }
+}

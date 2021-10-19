@@ -1,0 +1,54 @@
+.about{
+    position: relative;
+    .about-bg{
+        position: absolute;right:0;top:0;width:517px;
+        @media(max-width: 767px){
+            width:50%;
+        }
+    }
+    .row{
+        height:659px;width:100%;
+        @media(max-width: 767px){
+           margin:0;height:auto;
+        }
+    }
+    .col-md-6{
+        &:first-child{
+            width:518px;padding:160px 0 0 123px;
+            @media(max-width:1000px){
+                padding: 0 0 0 80px; margin: auto;
+            }
+            @media(max-width: 767px){
+                padding:10% 5%;
+            }
+            h1{
+                font-family:"Rubik Bold";font-weight:700;font-size:48px;color:$darkblue;letter-spacing: 2px;margin-bottom:34px;
+                @media(max-width:1000px){
+                    font-size:35px;
+                }
+                @media(max-width: 767px){
+                    font-size:27px;
+                }
+            }
+            p{
+                font-family:"Rubik Regular";font-weight:400;font-size:21px;letter-spacing: 0.88px;color: #000000;margin-bottom:30px;
+                @media(max-width:1000px){
+                    font-size:15px;line-height:22px;
+                }
+            }
+        }
+        &:last-child{
+            margin:auto 0;
+            img{
+                width:80px + 333px + 7px;
+                @media(max-width:1000px){
+                   width:270px;
+                }
+                @media(max-width:767px){
+                    position: relative; left: 50%;transform: translateX(-50%);
+                }
+               
+            }
+        }
+    }
+}
